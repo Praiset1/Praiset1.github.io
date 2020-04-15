@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="hike.js" async></script>
+    <title>Hike Cafe Cart</title>
+  </head>
+  <body>
+  <header>
+
+      <div class="overlay"></div>
+      <div class="navbar">
+        <h2>Hike Cafe Cart</h2>
+        <ul class="navbar">
+          <li><a href="index_menu.html">Home</a></li>
+          <li><a href="#pagecafe">The Cafe</a></li>
+          <li><a href="#pageabout">About</a></li>
+          <li class="cart">
+            <a href="cart.html">
+              <ion-icon name="basket"></ion-icon>Cart [ <span>@</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </header>
+
+    <div class="products-container">
+      <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+      </div>
+    </div>
+
+    <div id="cart-wrap">
+      <div id="cart-products"></div>
+      <div id="cart-list"></div>
+    </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style_main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="hike.js" async></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <div class="navbar">
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#pagecafe">The Cafe</a></li>
+          <li><a href="#pageabout">About</a></li>
+          <li class="cart">
+            <a href="cart.html">
+              <ion-icon name="basket"></ion-icon>Cart [<span>@</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <h2>Hike Cafe Cart</h2>
+    <showcase>
+      <div class="container">
+        <h1>Food tastes better @ Hike</h1>
+        <h3>Veg, Non veg, we got-cha sorted</h3>
+
+        <div class="category">
+          <div class="grills">
+            <img src="./images/full chicken.jpg" alt="chicken" />
+            <p>Assorted grills</p>
+            <h4>Grills</h4>
+            <h3>$15.00</h3>
+            <a class="add-cart cart1" href="#">Add Cart</a>
+          </div>
+
+          <div class="snacks">
+            <img src="./images/maize snack.jpg" alt="snacks" />
+            <p>Assorted snacks</p>
+            <h4>Snacks</h4>
+            <h3>$4.00</h3>
+            <a class="add-cart cart2" href="#">Add Cart</a>
+          </div>
+          ​
+          <div class="juice">
+            <img src="./images/fruits_smoothie.jpg" alt="drinks" />
+            <p>Juice,Cocktails & fruits</p>
+            <h4>Juice</h4>
+            <h3>$5.00</h3>
+            <a class="add-cart cart3" href="#">Add Cart</a>
+          </div>
+          ​
+          <div class="vegs">
+            <img src="./images/indian.jpg" alt="vegs" />
+            <p>Vegetarian foods</p>
+            <h4>Vegetarian</h4>
+            <h3>$8.00</h3>
+            <a class="add-cart cart4" href="#">Add Cart</a>
+          </div>
+
+          <div class="salads">
+            <img src="./images/berry salad.jpg" alt="salad" />
+            <p>Assorted salads</p>
+            <h4>Salads</h4>
+            <h3>$3.50</h3>
+            <a class="add-cart cart5" href="#">Add Cart</a>
+          </div>
+        </div>
+      </div>
+    </showcase>
+
+    <a href="cart.html"><button class="btn">Order</button></a>
+    <div id="cart-wrap">
+      <div id="cart-products"></div>
+      <div id="cart-list"></div>
+    </div>
+  </body>
+</html>

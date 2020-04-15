@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*background: url(./images/food.jpg) no-repeat bottom fixed;
+   display: stretch;*/
+  /*background-repeat:no-repeat;*/
+  background-size: cover;
+  font-family: sans serif;
+  background-color: #ff9800;
+}
+
+.head {
+  float: left;
+  color: #fff;
+  font-family: cursive;
+}
+
+.active {
+  color: gold;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+/*styling the navbar*/
+
+.navbar a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 30px;
+  height: flex;
+  padding-left: 1px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block; /*can also use inline*/
+  padding-right: 10px;
+  padding-left: 10px;
+  /*float: left; /*float ensures the links stay in place* can't use it with inline-block display when it's value is 0 */
+  border-right: 1px solid #bbb;
+  padding: 1rem;
+}
+
+nav li span {
+  padding-left: 5px;
+}
+
+ul {
+  position: fixed;
+  top: 0; /*bar fixed at the top during scroll*/
+  width: 100%;
+  list-style-type: none; /*removes bullets from the lists*/
+  margin: 1%; /* distance of bar from edge*/
+  padding: 1% 1%;
+  overflow: hidden;
+}
+
+li {
+  float: left; /*float ensures the links stay in place*/
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/*style the cart*/
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.cart a {
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container,
+products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 1%;
+}
+
+.container12 {
+  display: flex;
+  justify-content: left;
+  /*flex-wrap: wrap;*/
+  margin-top: 50px;
+  padding-bottom: 100px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 1%;
+}
+
+showcase h1 {
+  color: #fff;
+  font-family: cursive;
+  text-align: left;
+}
+
+showcase h3 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+showcase P:hover {
+  color: #fff;
+}
+
+showcase h4 {
+  cursor: url(page.html), pointer; /* prompt login or register then order*/
+  font-size: 1.5rem;
+  margin: 3%;
+}
+
+img {
+  width: 70%;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category {
+  color: red;
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  font-family: cursive;
+}
+
+.snacks,
+.grills,
+.juice,
+.vegs,
+.salads {
+  padding-left: 1rem;
+}
+
+.btn {
+  background-color: rgb(133, 131, 124);
+  padding: 0.4rem;
+  border: none;
+  border-radius: 8px solid;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+showcase add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: lightgray;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+showcase img:hover .cart5 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* ----CART / MENU PAGE ---- */
+
+.products-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.products-container ion-icon {
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.product-header, .cart-header {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgray;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.price, {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.product, menu {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle,
+.basketTotal {
+  width: 30%;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.cart-row {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+  
+  /*
+ */
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid red;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 1rem;
+  width: 40%;
+  margin: auto;
+  margin-left: 3em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  position: relative;
+}
+
+
+.cart-quantity-input, .cart-item-total {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 25px;
+}
+
+.cart-item-image {
+  border-radius: 10px;
+  width: 10%;
+  height: auto;
+  border-radius: 100px;
+}
+
+/* consider page resposiveness */
+@media screen and (max-width: 600px) {
+  .nav,
+  .container,
+  .column {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav,
+  showcase {
+    float: none;
+    width: 100%;
+  }
+}

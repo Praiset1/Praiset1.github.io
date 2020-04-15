@@ -1,0 +1,302 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#ff5722,#ff9800);
+    font-family:  Roboto, sans-serif;
+    } */
+.sign-up-form {
+  width: 400px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 60px;
+  margin: 8% auto 0;
+  text-align: center;
+  border-radius: 50px;
+  background-color: orange;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  display: inline-block;
+  border: 2px solid black;
+  background: #f1f1f1;
+  resize: vertical;
+}
+
+.loginbox {
+  width: 400px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background: orange;
+  padding: 60px;
+  margin: 8% auto 0;
+  text-align: center;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+.user {
+  width: 260px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 30px;
+  padding-left: 35px;
+}
+.btn {
+  width: 260px;
+  height: 40px;
+  background: grey;
+  border-radius: 10px;
+  margin: 40px auto;
+  display: block;
+  margin-left: 30px;
+}
+.tbox {
+  display: block;
+  width: 260px;
+  height: 40px;
+  box-sizing: 20px;
+  font-size: 15px;
+  margin-right: 200px;
+  background-color: orange;
+  margin-right: 80px;
+
+  border-radius: 10px;
+}
+
+#imageb {
+  justify-content: center;
+  float: right;
+}
+#imagebio {
+  border: 5px solid;
+  float: right;
+}
+#imagec {
+  justify-content: left;
+}
+.imagekk {
+  float: right;
+  border: 20px;
+  margin-right: 50px;
+}
+.about {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ul{
+margin-left: 200px;
+}
+ul li {
+list-style: none;
+display: inline-block ;
+line-height: 100px;
+position: relative;
+
+}
+ul li a{
+    display: block;
+ text-decoration: none;
+ font-size: 20px;   
+ font-family:  Roboto, sans-serif;
+padding: 0 20px;
+}
+ul li a:hover{
+ color: black;   
+    
+} */
+
+.grid {
+  display: flex;
+}
+.fries {
+  margin-left: 20px;
+  padding: 50px;
+  height: 400px;
+}
+.image {
+  padding: 30px;
+  margin: 30px;
+  margin-right: 40px;
+}
+.cafe {
+  text-align: center;
+  font-family: cursive;
+  color: white;
+  margin-right: 30px;
+  word-spacing: 10px;
+}
+
+.dropbtn {
+  color: burlywood;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+}
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+}
+.drop-content a:hover {
+  background-color: blueviolet;
+}
+.show {
+  display: block;
+}
+.events {
+  display: flex;
+  padding: 10px 10px;
+}
+.heading {
+  padding: 40px;
+  color: white;
+}
+.service {
+  padding: 40px;
+}
+.container {
+  background-image: url();
+}
+.cater {
+  text-align: center;
+  color: white;
+}
+
+/* [PAGE & WRAPPER] */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+​ #cart-wrap {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  width: 100%;
+}
+#cart-products {
+  width: 50%;
+}
+#cart-list {
+  width: 50%;
+}
+#cart-products,
+#cart-list {
+  padding: 20px;
+}
+​
+  ​
+  /* [MOVIES] */
+  #cart-products {
+  display: grid;
+  width: 800px;
+  background-color: white;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  border: 1px solid transparent;
+}
+.p-item {
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: white;
+}
+.p-img {
+  width: 340px;
+  height: 195px;
+  padding-left: 3px;
+  padding-top: 3px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.p-name {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+  font-family: "Rubik" sans-serif;
+  font-size: 1.1em;
+}
+.p-price {
+  padding-top: 10px;
+  color: orange;
+  text-align: center;
+}
+.p-desc {
+  color: black;
+  padding-top: 5px;
+  font-size: 0.9em;
+  padding-bottom: 5px;
+}
+.p-add {
+  background: black;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+​
+  /* [MOVIE LIST] */
+  #cart-list div.c-item:nth-child(odd) {
+  background: #cfe1ff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.c-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #cfe1ff;
+}
+.c-qty,
+.c-name {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.c-qty {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  padding-left: 7px;
+  background-color: rgba(12, 12, 12, 0.2);
+  text-align: center;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.c-empty,
+.c-checkout {
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+.c-empty {
+  background-color: rgba(192, 192, 192, 0.2);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+}
+.c-checkout {
+  margin-top: 5px;
+  background: orange;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  font-family: "Rubik";
+}

@@ -1,0 +1,216 @@
+/*@import url('https://fonts-googleapis.com/css?family-Poppins'); */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+body {
+  margin: 10;
+  background-color: #ff9800;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  background-repeat: url(./images/food.jpg) no-repeat center;
+  
+
+}
+
+/*make images responsive*/
+#imageresp {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.cafename {
+  display: flex;
+  height: 30px;
+  left: 1px;
+  top: 100%;
+
+  font-family: Berkshire Swash;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  padding-left: 5px;
+  padding-right: 20px;
+  border-right: 0px solid #bbb;
+}
+
+/* Column container */
+#lay {
+  flex-direction: column;
+  margin-top: 1%;
+  height: 510px;
+  border: 5px dotted #f62336;
+  margin-bottom: 0;
+  max-width: 95%;
+  border-radius: 1px;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  margin-top: 1px;
+  background-color: #ff9800;
+}
+
+.venue {
+  background-repeat: no-repeat;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left {
+  width: 40%;
+  background-color: #ff9800;
+  padding-left: 0%;
+  padding-right: 0;
+}
+.right {
+  width: 60%;
+}
+
+.img {
+  width: 60%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: flex;
+  padding: 2px;
+}
+
+#imagepic {
+  border: 0px solid lightskyblue;
+}
+.imageback {
+  border: 0px solid lightskyblue;
+  background-image: url(/images/chips.jpg.jpg);
+  background-size: 80% 70%;
+  background-repeat: no-repeat;
+  display: inline; /* get better pic */
+}
+#imag {
+  float: left;
+}
+
+#marq {
+  display: flex;
+  float: right;
+}
+
+#imageb {
+  text-align: center;
+}
+
+.button {
+  background-color: lightgray;
+  border: 0px solid;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  font: black;
+}
+
+.button1 {
+  background-color: lightgray;
+  border: 2px solid;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+/*******************************/
+.cardtime {
+  text-align: left;
+  display: inline-flex;
+}
+.card l {
+  display: flex;
+  float: center;
+  max-width: 100%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: cursive;
+}
+
+.card2 {
+  display: inline-flex;
+  float: botton;
+  max-width: 400px;
+  height: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.cardfeed {
+  margin-top: 0%;
+  box-shadow: 0, 4px, 8px, 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  height: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+/* menu catalogue */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 30px;
+  padding-right: 5px;
+  display: left;
+  max-width: 100%;
+  height: 100%;
+}

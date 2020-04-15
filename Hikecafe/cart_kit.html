@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="hike.js" async></script>
+    <title>Hike Cafe Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <div class="navbar">
+        <h2>Hike Cafe Cart</h2>
+        <ul class="navbar">
+          <li><a href="index_menu.html">Home</a></li>
+          <li><a href="#pagecafe">The Cafe</a></li>
+          <li><a href="#pageabout">About</a></li>
+          <li class="cart">
+            <a href="cart_kit.html">
+              <ion-icon name="basket"></ion-icon>Cart [ <span>@</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--menu-->
+    <showcase>
+      <div class="container">
+        <h1>Food tastes better @ Hike</h1>
+        <h3>Veg, Non veg, we got-cha sorted</h3>
+
+        <div class="category">
+          <div class="grills">
+            <img src="./images/full chicken.jpg" alt="chicken" />
+            <p>Assorted grills</p>
+            <h4>Grills</h4>
+            <span class="menu-price">$15.00</span>
+            <button class="btn btn-primary menu-button" type="button">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="snacks">
+            <img src="./images/maize snack.jpg" alt="snacks" />
+            <p>Assorted snacks</p>
+            <h4>Snacks</h4>
+            <span class="menu-price">$4.00</span>
+            <button class="btn btn-primary menu-button" type="button">
+              Add to Cart
+            </button>
+          </div>
+          ​
+          <div class="juice">
+            <img src="./images/fruits_smoothie.jpg" alt="drinks" />
+            <p>Juice,Cocktails & fruits</p>
+            <h4>Juice</h4>
+            <span class="menu-price">$5.00</span>
+            <button class="btn btn-primary menu-button" type="button">
+              Add to Cart
+            </button>
+          </div>
+          ​
+          <div class="vegs">
+            <img src="./images/indian.jpg" alt="vegs" />
+            <p>Vegetarian foods</p>
+            <h4>Vegetarian</h4>
+            <span class="menu-price">$8.00</span>
+            <button class="btn btn-primary menu-button" type="button">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="salads">
+            <img src="./images/berry salad.jpg" alt="salad" />
+            <p>Assorted salads</p>
+            <h4>Salads</h4>
+            <span class="menu-price">$3.50</span>
+            <button class="btn btn-primary menu-button" type="button">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </showcase>
+
+   
+
+    <!--end of menu-->
+
+   <!--<div class="products-container">
+      <h3>Menu Order Bill</h3>
+      <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+      </div>-->
+
+<showcase>
+
+  <div class="cart-row">
+    <span class="cart-item cart-header cart-column">Menu</span>
+    <span class="cart-price cart-header cart-column">Price</span>
+    <span class="cart-quantity cart-header cart-column">Quantity</span>
+    <span class="cart-total cart-header cart-column">Total</span>
+</div>
+
+  <div class="cart-items">
+    <div class="cart-row">
+      <div class="cart-item cart-column">
+        <img class="cart-item-image" src="/images/pork.jpg" />
+        <span class="cart-item-title">pork</span>
+      </div>
+      <span class="cart-price cart-column">$5.40</span>
+      <div class="cart-quantity cart-column">
+        <input class="cart-quantity-input" type="number" values="1" />
+        <input class="cart-item-total" type="number" values="1" />
+        <button class="btn btn-danger" type="button">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-items">
+    <div class="cart-row">
+      <div class="cart-item cart-column">
+        <img class="cart-item-image" src="/images/grabs.jpg" />
+        <span class="cart-item-title">grabs</span>
+      </div>
+      <span class="cart-price cart-column">$0.99</span>
+      <div class="cart-quantity cart-column">
+        <input class="cart-quantity-input" type="number" values="2" />
+        <button class="btn btn-danger" type="button">Remove</button>
+      </div>
+    </div>
+  </div>
+</showcase>
+
+      <div class="products"></div>
+    </div>
+  </body>
+</html>
